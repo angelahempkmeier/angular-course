@@ -9,7 +9,9 @@ import { NewComponent } from './components/new-component/new-component.component
   imports: [CommonModule, RouterOutlet, NewComponent],
   template: `
     <h1>Curso de Angular</h1>
-    <app-new-component />
+    <div class="theme-dark">
+      <app-new-component />
+    </div>
   `
 })
 export class AppComponent {
