@@ -15,6 +15,7 @@ export class TemplateBindingComponent {
   public condition = this.age > 1 ? 'Maior que um' : 'Menor que um';
   public isDisabled = true;
   public srcValue = 'https://img.freepik.com/fotos-gratis/ceu-azul-com-nuvens_1232-936.jpg';
+  public isTextDecoration = this.age >= 28 ? 'underline' : 'none'
   
   constructor(){
     setTimeout(() => {
