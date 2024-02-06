@@ -26,4 +26,20 @@ export class TemplateBindingComponent {
   public sum(name:string, age:number){
     return name + age;
   }
+
+  public newSum(){
+    return this.age++;
+  }
+
+  public newSub(){
+    return this.age--;
+  }
+
+  public onKeyDown(event: Event){
+    return console.log(event);
+  }
+
+  public onMouseEvent(event: MouseEvent){
+    return console.log(event);
+  }
 }

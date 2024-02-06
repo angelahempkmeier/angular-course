@@ -26,3 +26,17 @@
 <p [style.text-decoration]="'underline'">{{age}}</p>
 
 <p [style.text-decoration]="isTextDecoration">{{age}}</p>
+
+<hr />
+
+<h2>Event binding</h2>
+
+<button (click)="newSum()">+</button>
+<button (click)="newSub()">-</button>
+
+<input (keydown.shift.t)="onKeyDown($event)">
+
+<div style="background: red; width: 100px; height: 100px; margin-top: 50px;" 
+(mousemove)="onMouseEvent($event)">
+
+</div>
