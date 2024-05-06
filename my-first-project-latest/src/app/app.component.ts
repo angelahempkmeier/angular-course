@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { AsyncPipe, CommonModule, NgFor, NgIf } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 
 import { NewComponent } from './components/new-component/new-component.component';
@@ -10,7 +10,7 @@ import { TemplateControlFlowComponent } from './components/template/template-con
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, NewComponent, TemplateBindingComponent, TemplateVariablesComponent, TemplateControlFlowComponent],
+  imports: [CommonModule, NgIf, NgFor, AsyncPipe, RouterOutlet, NewComponent, TemplateBindingComponent, TemplateVariablesComponent, TemplateControlFlowComponent],
   template: `
     <h1>Curso de Angular</h1>
     <app-template-variables />
